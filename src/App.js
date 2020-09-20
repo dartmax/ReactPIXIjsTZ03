@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Rectangle from './components/Reactangle'
+import { Stage } from '@inlet/react-pixi'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className="main">
+    <div className="footer-container">
+      <div className="block-button">
+        <input placeholder="number of current shapes" inactive/>
+        <input placeholder="area occupied by shapes" />
+      </div>
     </div>
-  );
-}
+    <Stage className="StageStyle" width={800} height={600} options={{antialias: true}}>
+      <Rectangle />
+    </Stage>
+    <div className="footer-container">
+      <div className="block-button">
+        <button className="number-button" type="button">-</button>
+        <button className="number-button" type="button">+</button>
+      </div>
+      <p className="button-text">Add shapes</p>
+      <div className="block-button">
+        <button className="number-button" type="button">-</button>
+        <button className="number-button" type="button">+</button>
+      </div>
+      <p className="button-text">Increase Gravity</p>
+    </div>
+  </div>
+)
 
 export default App;
