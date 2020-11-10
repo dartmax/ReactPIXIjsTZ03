@@ -7719,6 +7719,11 @@ pkg-up@3.1.0, pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
+planck-js@^0.3.22:
+  version "0.3.22"
+  resolved "https://registry.yarnpkg.com/planck-js/-/planck-js-0.3.22.tgz#c0d29ca296a20f7b55b97259ca71053623070ee8"
+  integrity sha512-aR7EeqPTdxnQJASk1DsS2ryRf1UCaHXR1F/VdKP2tJckXmwG4MHtTSQGKq9UcE1kZr5beFkgVLnBKBeq9u4ngA==
+
 pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
